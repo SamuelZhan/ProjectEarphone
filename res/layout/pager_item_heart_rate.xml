@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tokool.earphone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal">
+     
+        <com.tokool.earphone.customview.RoundProgressBar
+            android:id="@+id/round_progress2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            custom:count="100"
+            custom:progressColor="#33ffffff"
+            custom:secondProgressColor="#aaffffff"
+            custom:progressWidth="8dp"
+            custom:currentCount="100"
+            custom:splitAngle="2"
+            custom:spaceAngle="2"
+            custom:startAngle="-90"
+            custom:outsideCircleWidth="2dp"/>
+        
+        <ImageView 
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/round_progress2"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@drawable/arrow_left_big"/>
+        
+        <ImageView 
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/round_progress2"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@drawable/arrow_right_big"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            
+            <ImageView 
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heart"/>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/tv_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="54"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/average_heart_rate"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <com.tokool.earphone.customview.HeartRateLine
+        android:id="@+id/heart_line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

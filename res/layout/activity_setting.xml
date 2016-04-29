@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00aced" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        
+        <ImageView 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="18dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back"
+            android:background="@drawable/selector_btn_blue_to_light"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+	</RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/btn_unit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_blue_to_light"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unit"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/meter"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#00000000"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_right"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <LinearLayout
+        android:id="@+id/btn_version"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_blue_to_light"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="1.0"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#00000000"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_right"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <LinearLayout
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_blue_to_light"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_device"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#00000000"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_right"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+
+</LinearLayout>

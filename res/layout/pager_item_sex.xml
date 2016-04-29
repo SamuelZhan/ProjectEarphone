@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00aced">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+	    <RadioGroup 
+	        android:id="@+id/radiogroup"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/radio_btn_male"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:button="@null"
+	            android:background="@drawable/male"/>
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	        
+	        <RadioButton 
+	            android:id="@+id/radio_btn_female"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:button="@null"
+	            android:background="@drawable/female"/>
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	        
+	    </RadioGroup>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/radiogroup"
+	        android:orientation="horizontal">       
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_male"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/male"
+	            android:textSize="16sp"
+	            android:textColor="#ffffff"/>
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_female"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/female"
+	            android:textSize="16sp"
+	            android:textColor="#ffffff"/>
+	        
+	        <View 
+	            android:layout_width="0dp"
+	            android:layout_height="1dp"
+	            android:layout_weight="1"/>
+	    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

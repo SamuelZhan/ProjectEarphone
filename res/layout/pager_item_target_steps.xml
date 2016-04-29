@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tokool.earphone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       
+    <RelativeLayout
+        android:id="@+id/ruler_layout"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+	    android:background="@drawable/shape_ruler">
+        
+	    <com.tokool.earphone.customview.Ruler
+	        android:id="@+id/ruler_target_step"
+	        android:layout_width="240dp"
+	        android:layout_height="50dp"
+	        android:layout_centerInParent="true"
+	        android:background="#ffffff"
+	        custom:fromValue="1000"
+	        custom:toValue="30000"
+	        custom:intervalsBetweenValues="10"
+	        custom:valuesInterval="1000"
+	        custom:interval="5dp"
+	        custom:linesColor="#33000000"
+	        custom:linesWidth="4px"
+	        custom:valuesTextSize="12sp"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+     	android:layout_above="@id/ruler_layout"
+        android:orientation="horizontal">
+        
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/target_steps"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"/>
+	        
+	     <TextView
+	         android:id="@+id/tv_target_steps"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginRight="8dp"
+	         android:layout_marginLeft="8dp"
+	         android:text="10000"
+	         android:textSize="24sp"
+	         android:textColor="#000000"/>
+	     
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/step"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</RelativeLayout>

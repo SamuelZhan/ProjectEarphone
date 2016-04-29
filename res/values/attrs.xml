@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="RoundProgressBar">
+        <attr name="progressColor" format="color"/>
+        <attr name="secondProgressColor" format="color"/>        
+        <attr name="count" format="integer"/>
+        <attr name="currentCount" format="integer"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="splitAngle" format="integer"/>
+        <attr name="startAngle" format="integer"/>
+        <attr name="spaceAngle" format="integer"/>
+        <attr name="outsideCircleWidth" format="dimension"/>
+        <attr name="outsideCircleColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleProgress">
+        <attr name="numOfCircles" format="integer"/>
+        <attr name="maxRadius" format="dimension"/>
+        <attr name="minRadius" format="dimension"/>
+        <attr name="rotateSpeedInMillis" format="integer"/>
+        <attr name="isClockwise" format="boolean"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="HeartRateLine">
+        <attr name="numOfPoints" format="integer"/>
+        
+    </declare-styleable>
+    
+    <declare-styleable name="DashLine">
+        <attr name="lineColor" format="color"/>
+        <attr name="dashWidth" format="dimension"/>
+        <attr name="solidWidth" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="Ruler">
+        <attr name="interval" format="dimension"/>
+        <attr name="fromValue" format="integer"/>
+        <attr name="toValue" format="integer"/>
+        <attr name="currentValue" format="integer"/>
+        <attr name="intervalsBetweenValues" format="integer"/>
+        <attr name="valuesInterval" format="integer"/>
+        <attr name="valuesTextSize" format="dimension"/>
+        <attr name="valuesTextColor" format="color"/>
+        <attr name="linesWidth" format="dimension"/>
+        <attr name="linesColor" format="color"/>
+        <attr name="isShowPointer" format="boolean"/>
+        <attr name="orientation">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

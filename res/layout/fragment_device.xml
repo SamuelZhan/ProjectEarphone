@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00aced" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/device"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="#00aced"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/earphone"/>
+        
+        <LinearLayout 
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+             android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+            
+            <TextView
+                android:id="@+id/tv_sychronize_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/sychronize_time"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+            
+            <TextView
+                android:id="@+id/tv_connection_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"               
+                android:layout_marginBottom="2dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+            
+            <TextView
+                android:id="@+id/tv_electricity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:layout_marginBottom="2dp"
+                android:text="@string/electricity"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_reminder"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/btn_toggle_remind_when_called"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_close"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sedentary_reminder"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/btn_toggle_remind_when_sit"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:background="@drawable/toggle_close"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <LinearLayout
+        android:id="@+id/btn_clock"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_blue_to_light"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_reminder"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_right"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_btn_blue_to_light"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hardware_update"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="1.1.0"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:background="#00000000"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_right"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"/>
+    
+    <Button 
+        android:id="@+id/btn_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/unbind"
+        android:textColor="#00aced"
+        android:textSize="16sp"
+        android:background="@drawable/selector_btn_white_to_grey_round"/>
+
+</LinearLayout>

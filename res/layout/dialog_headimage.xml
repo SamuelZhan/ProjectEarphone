@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+   
+    <Button
+        android:id="@+id/btn_album"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/pick_from_album"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:background="@drawable/selector_btn_white_to_grey"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E4E4E4"/>
+    
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="@string/take_a_photo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:background="@drawable/selector_btn_white_to_grey"/>   
+
+</LinearLayout>

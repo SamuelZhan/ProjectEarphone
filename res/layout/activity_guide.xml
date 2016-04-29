@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00aced">
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"        
+        android:gravity="center"
+        android:text="@string/personal_message"
+        android:textSize="18sp"
+        android:textColor="#ffffff"/>
+    
+    <com.tokool.earphone.customview.NoScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+        
+	    <Button
+	        android:id="@+id/btn_next_special"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentBottom="true"
+	        android:text="@string/next"
+	        android:textSize="18sp"
+	        android:textColor="#00aced"
+	        android:background="@drawable/selector_btn_white_to_grey"/>
+        
+	    <LinearLayout
+	        android:id="@+id/previous_next_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="horizontal">
+	        
+	        <Button
+	            android:id="@+id/btn_previous"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:text="@string/previous"
+	            android:textSize="18sp"
+	            android:textColor="#00aced"
+	            android:background="@drawable/selector_btn_white_to_grey"/>
+	        
+	        <View 
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:background="#C8C8C8"/>
+	        
+	        <Button
+	            android:id="@+id/btn_next"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:text="@string/next"
+	            android:textSize="18sp"
+	            android:textColor="#00aced"
+	            android:background="@drawable/selector_btn_white_to_grey"/>
+         </LinearLayout>        
+	    
+    </LinearLayout>
+
+</LinearLayout>

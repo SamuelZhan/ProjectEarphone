@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:gravity="center"
+	    android:text="@string/sex"
+	    android:textColor="#000000"
+	    android:textSize="18sp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E4E4E4"/>
+      
+    <RadioGroup 
+        android:id="@+id/sex_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <RadioButton 
+            android:id="@+id/sex_male"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/male"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/selector_check"
+            android:background="@drawable/selector_btn_white_to_grey"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#E4E4E4"/>
+        
+        <RadioButton 
+            android:id="@+id/sex_female"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:button="@null"
+            android:text="@string/female"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/selector_check"
+            android:background="@drawable/selector_btn_white_to_grey"/>
+        
+    </RadioGroup>       
+</LinearLayout>

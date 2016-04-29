@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00aced" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        
+        <ImageView 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="18dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back"
+            android:background="@drawable/selector_btn_blue_to_light"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/alarm_reminder"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <ImageView 
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/add"
+            android:background="@drawable/selector_btn_blue_to_light"/>
+        
+        <ImageView 
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/delete"
+            android:background="@drawable/selector_btn_blue_to_light"
+            android:visibility="gone"/>
+        
+	</RelativeLayout>
+	
+    <ListView 
+        android:id="@+id/lv_clocks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"        
+        android:layout_weight="1"
+        android:dividerHeight="0dp"
+        android:divider="#ffffff"/>       
+
+</LinearLayout>
